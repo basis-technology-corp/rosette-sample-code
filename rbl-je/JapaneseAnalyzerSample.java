@@ -1,4 +1,4 @@
-package com.basistech.rosette.samples;
+package com.basistech.rosette.bl.samples;
 
 import com.basistech.rosette.lucene.BaseLinguisticsAnalyzer;
 import org.apache.lucene.analysis.Analyzer;

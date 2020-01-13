@@ -1,4 +1,4 @@
-package com.basistech.rosette.samples;
+package com.basistech.rosette.bl.samples;
 
 import com.basistech.rosette.bl.Analysis;
 import com.basistech.rosette.bl.Analyzer;

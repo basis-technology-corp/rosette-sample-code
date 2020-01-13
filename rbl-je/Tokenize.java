@@ -1,4 +1,4 @@
-package com.basistech.rosette.samples;
+package com.basistech.rosette.bl.samples;
 
 import com.basistech.rosette.bl.Token;
 import com.basistech.rosette.breaks.Tokenizer;
