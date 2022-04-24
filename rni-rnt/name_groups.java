@@ -22,6 +22,7 @@ void nameGroups(String indexPathname, List<Name> names) throws NameIndexExceptio
     Name queryName = NameBuilder.data("").language(LanguageCode.UNKNOWN).extra("DEBUG").build();
     NameIndexQuery query = new NameIndexQuery(queryName);
     query.setTestNameExtra(true);
+    query.setTestEntityType(false);
     query.setTestNameData(false);
     query.setMaximumNamesToConsider(NameIndexQuery.UNLIMITED_RESULTS);
     query.setMaximumNamesToCheck(NameIndexQuery.UNLIMITED_RESULTS);
