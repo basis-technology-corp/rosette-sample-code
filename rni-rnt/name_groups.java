@@ -15,6 +15,7 @@ void nameGroups(String indexPathname, List<Name> names) throws NameIndexExceptio
     //3. Define a query as follows:
     //   * The query tests the Extra field, not name data.
     //   * The query can return an unlimited number of results.
+    //   * The query can return results of any entity type.
     //   * The query Name object includes the descriptive token in the Extra field.
     //     It should only contain a single search token (a string with no spaces).
     //     The Data field may be an empty string. The language and script may be any
@@ -22,6 +23,7 @@ void nameGroups(String indexPathname, List<Name> names) throws NameIndexExceptio
     Name queryName = NameBuilder.data("").language(LanguageCode.UNKNOWN).extra("DEBUG").build();
     NameIndexQuery query = new NameIndexQuery(queryName);
     query.setTestNameExtra(true);
+    query.setTestEntityType(false);
     query.setTestNameData(false);
     query.setMaximumNamesToConsider(NameIndexQuery.UNLIMITED_RESULTS);
     query.setMaximumNamesToCheck(NameIndexQuery.UNLIMITED_RESULTS);
